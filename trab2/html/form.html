@@ -17,54 +17,31 @@
         </nav>
     </header>
 
-    <h1>Biblioteca de Mangás: Um Paraíso para os Amantes dos Quadrinhos Japoneses!</h1>
+    <div id="in_text">
+        <h1>Biblioteca de Mangás: Um Paraíso para os Amantes dos Quadrinhos Japoneses!</h1>
+        <h4>Aqui, somos mais do que apenas uma biblioteca; somos uma comunidade apaixonada, dedicada a compartilhar a riqueza da cultura dos mangás com todos vocês.</h4>
+    </div>
 
-    <h4>Aqui, somos mais do que apenas uma biblioteca; somos uma comunidade apaixonada, dedicada a compartilhar a riqueza da cultura dos mangás com todos vocês.</h4>
 
-    <form action="" method="post">
-        <div class="container">
-            <fieldset>
-                <legend>Dados de Usuário</legend>
-                <div>
-                    <label for="apelido">Apelido:</label>
-                    <input type="text" id="apelido" placeholder="Insira o nome que aparece para outros usuários da plataforma">
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="abc@abc.com(.xx)">
-                </div>
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" placeholder="Insira sua senha para entrar na plataforma">
-                </div>
+    <div class="container">
+        <form>
+            <fieldset><legend>Dados de Usuário</legend>
+                <label for="apelido"><span>Apelido </span><input type="text" class="input-field" id="apelido" /></label>
+                <label for="email"><span>E-mail </span></span><input type="email" class="input-field" id="email" placeholder="abc@abc.com(.ab)" /></label>
+                <label for="senha"><span>Senha </span><input type="password" class="input-field" id="senha" /></label>
             </fieldset>
-        </div>
-        <div class="container">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <div>
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" placeholder="Insira o seu nome completo">
-                </div>
-                <div>
-                    <label for="cel">Número de Celular:</label>
-                    <input type="tel" id="cel" placeholder="(00) 900000000">
-                </div>
-                <div>
-                    <label for="bday">Data de Nascimento:</label>
-                    <input type="date" id="bday">
-                </div>
-                <div>
-                    <label for="cep">CEP:</label>
-                    <input type="number" id="cep" placeholder="00000000">
-                </div>
+            <br>
+            <fieldset><legend>Dados Pessoais</legend>
+                <label for="nome"><span>Nome Completo </span><input type="text" class="input-field" id="nome" /></label>
+                <label for="cel"><span>Número de Celular </span><input type="tel" class="input-field" id="cel" placeholder="55XX9YYYYZZZZ" /></label>
+                <label for="bday"><span>Data de Nascimento </span><input type="date" class="input-field" id="bday" /></label>
+                <label for="cep"><span>CEP </span><input type="number" class="input-field" id="cep" placeholder="XXXXXYYY" /></label>
             </fieldset>
-        </div>
-        <div>
-            <button type="submit">Cadastrar-se</button>
-        </div>
-    </form>
-
+            <br>
+            <label><span> </span><input type="submit" value="Cadastrar-se" /></label>
+        </form>
+    </div>
+    <br>
     <footer>
         <div class="footer">
         <div class="row">

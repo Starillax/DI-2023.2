@@ -1,5 +1,6 @@
   body {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   header {
@@ -38,41 +39,90 @@
   }
 
   #in_text {
-    margin: 150px auto;
-    width: 70%;
+    text-align: center;
+    margin: 75px auto;
   }
 
-  input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  .container{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: auto;
+    text-align: center;
   }
 
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  .container label{
+    display: block;
+    margin-bottom: 10px;
   }
 
-  button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+  .container label > span{
+    float: left;
+    width: 150px;
+    color: #bbbbbb;
+    font-weight: bold;
+    font-size: 13px;
   }
 
-  button:hover {
-    background-color: #45a049;
-  }
-
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+  .container fieldset{
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #000000;
     padding: 20px;
+    background: #444444;
+    box-shadow: inset 0px 0px 15px #333333;
+    -moz-box-shadow: inset 0px 0px 15px #333333;
+    -webkit-box-shadow: inset 0px 0px 15px #333333;
+    width: 25%;
+    margin: auto;
+  }
+
+  .container fieldset legend{
+    color: #bbbbbb;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #555555;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #333333;
+    -moz-box-shadow:-0px -1px 2px #333333;
+    -webkit-box-shadow:-0px -1px 2px #333333;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .container .input-field{
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border: 1px solid #000000;
+   outline: none;
+   color: #000000;
+   padding: 5px 8px 5px 8px;
+   box-shadow: inset 1px 1px 4px #333333;
+   -moz-box-shadow: inset 1px 1px 4px #333333;
+   -webkit-box-shadow: inset 1px 1px 4px #333333;
+   background: #ffffff;
+   width: 50%;
+  }
+
+  .container label input[type=submit]{
+	 background: #444444;
+	 border: 1px solid #000000;
+	 padding: 5px 15px 5px 15px;
+	 color: #bbbbbb;
+	 box-shadow: inset -1px -1px 3px #333333;
+	 -moz-box-shadow: inset -1px -1px 3px #333333;
+	 -webkit-box-shadow: inset -1px -1px 3px #333333;
+	 border-radius: 3px;
+	 -webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;	
+	 font-weight: bold;
+   margin: auto;
   }
 
   .footer{
