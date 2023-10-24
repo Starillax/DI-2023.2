@@ -1,116 +1,190 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Playfair+Display&display=swap');
 
-  body {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
-  
-  header {
-    padding-bottom: 50px;
-  }
-  
-  nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  #logo {
-    float: left;
-    width: 75px;
-    height: 50px;
-  }
-  
-  nav a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    background-color: #444444;
-  }
-  
-  #in_text {
-    text-align: center;
-    margin: 75px auto;
-  }
-  
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: min-content;
-    height: min-content;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 180px; 
-    height: 270px;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+body {
+  font-size: 14px;
+  color: #242424;
+  font-weight: 400;
+  min-height: 1350px;
+  font-family: 'Playfair Display', serif;
+}
 
-  .footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background:#000;
-    text-align: center;
-  }
-    
-  .footer .row{
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: gray;
-    font-size: 0.8em;
-  }
-    
-  .footer .row a{
-    text-decoration: none;
-    color: gray;
-    transition: 0.5s;
-  }
-    
-  .footer .row a:hover{
-    color:#fff;
-  }
-    
-  .footer .row ul{
-    width: 100%;
-  }
-    
-  .footer .row ul li{
-    display: inline-block;
-    margin: 0px 30px;
-  }
-    
-  .footer .row a i{
-    font-size: 2em;
-    margin: 0% 1%;
-  }  
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#logo {
+  float: left;
+  width: 75px;
+  height: 50px;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #444444;
+}
+
+#in_text {
+  text-align: center;
+  margin: 75px auto;
+}
+
+.container {
+  width: 1150px;
+  margin: 0px auto;
+  display: table;
+}
+
+.width-100 {
+  width: 100%;
+  float: left;
+}
+
+.width-25 {
+  width: 25%;
+  float: left;
+}
+
+.product-section {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.product-img {
+  width: auto;
+  height: 270px;
+}
+
+.product-img-center {
+  text-align: center;
+}
+
+.product-border {
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+}
+
+.product-name a {
+  color: #232b33;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Roboto, sans-serif, arial;
+}
+
+.product-rating {
+  color: #FFC315;
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.product-rating span {
+  font-weight: 600;
+  color: #3c3b3b8c;
+  font-size: 12px;
+  font-family: Roboto, sans-serif, arial;
+}
+
+.product-discounted-price {
+  color: #333;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  font-family: Roboto, sans-serif, arial;
+}
+
+.product-original-price {
+  color: #6f6f6f;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.product-discount {
+  border: 1px solid #ccc;
+  background: #fff;
+  display: inline-block;
+  font-size: 10px;
+  color: #999;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.product-price {
+  margin-top: 15px;
+}
+
+footer {
+  background:#000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 220px;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
