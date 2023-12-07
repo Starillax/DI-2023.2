@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Playfair+Display&display=swap');
+
+* { 
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif; 
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+    text-align: center;
+}
+
+.grid > * {
+    padding:5px;
+}
+
+header {
+  grid-area: header;
+  
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+  width: 100%; 
+}
+
+nav a {
+    padding-left: 20px; 
+  }
+
+nav ul{
+    list-style: none;
+    padding:0px;
+}
+
+nav li{ 
+    padding:6px;   
+}
+
+#in_text {
+    text-align: center;
+    margin: 25px auto;
+    width: 70%;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: lightgrey;
+}
+
+.carousel-indicators button,
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: lightgrey;
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+
+.modal-img{
+  width: 100%;
+}
+
+.product-rating {
+  color: #FFC315;
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.product-rating span {
+  font-weight: 600;
+  color: #3c3b3b8c;
+  font-size: 12px;
+  font-family: Roboto, sans-serif, arial;
+}
+
+.hidden {
+  color: #212529;
+  transition: color 1s;
+}
+
+.hidden:hover {
+  color: #FFFFFF;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.5);
+  color: red;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.shadow-pop-tr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	-webkit-animation: shadow-pop-tr 2.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+	        animation: shadow-pop-tr 2.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+              box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+              box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+  @keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+              box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+              box-shadow: 1px -1px #000000, 2px -2px #000000, 3px -3px #000000, 4px -4px #000000, 5px -5px #000000, 6px -6px #000000, 7px -7px #000000, 8px -8px #000000;
+      -webkit-transform: translateX(-8px) translateY(8px);
+              transform: translateX(-8px) translateY(8px);
+    }
+  }
+  
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "nav        nav"
+      "main      main"
+      "footer  footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "nav    nav     nav"
+      "main   main    main"
+      "footer footer footer";
+   }
+   nav ul {
+     flex-direction: column;
+   }
+}
