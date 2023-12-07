@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd8ecf02e0.js" crossorigin="anonymous"></script>
+
+    <title>Biblioteca de Mangás</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="grid">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.webp" width="75" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Início</a>
+                <a class="nav-item nav-link" href="#carrossel">Qualidades</a>
+                <a class="nav-item nav-link" href="#cards">Catálogo</a>
+                <a class="nav-item nav-link" href="#mais-populares">Gêneros</a>
+            </div>
+        </nav>
+
+        <main>
+            <img src="imgs/biblioteca_banner.webp" alt="" id="banner" class="shadow-pop-tr img-fluid">
+
+            <div id="in_text">
+                <h2>Biblioteca de Mangás: Um Paraíso para os Amantes dos Quadrinhos Japoneses!</h2>
+                <h6>Aqui, somos mais do que apenas uma biblioteca; somos uma comunidade apaixonada, dedicada a compartilhar a riqueza da cultura dos mangás com todos vocês.</h6>
+            </div>
+
+            <br>
+
+            <h4 id="carrossel">Algumas das principais características de nossa biblioteca:</h4>
+            
+            <br>
+
+            <div class="container text-center">
+                <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/slide1.webp" class="d-block w-100" alt="First Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Coleção Excepcional</h5>
+                            <p>Diversificada, dispõe desde os clássicos até os lançamentos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide2.webp" class="d-block w-100" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Empréstimo Online Descomplicado</h5>
+                            <p>Com o nosso sistema online, fazer o empréstimo de mangás nunca foi tão fácil</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide3.webp" class="d-block w-100" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Recomendações</h5>
+                            <p>Nosso site sempre está atualizado com recomendações de leitura</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/slide4.webp" class="d-block w-100" alt="Fourth slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Conteúdo Multilíngue</h5>
+                            <p>Oferecemos mangás em português, japonês, inglês, espanhol, entre muitas outras</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h4 id="cards">Exemplares favoritos de nossos frequentadores:</h4>
+
+            <br>
+
+            <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="imgs/manga_jjk0.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal1" alt="manga1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jujutsu Kaisen 0</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="imgs/manga_calafrios.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal2" alt="manga2">
+                    <div class="card-body">
+                        <h5 class="card-title">Calafrios: Seleção de Contos Favoritos do Autor</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="imgs/manga_deathnote.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal3" alt="manga3">
+                    <div class="card-body">
+                        <h5 class="card-title">Death Note - Short Stories</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="imgs/manga_junji_ito.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal4" alt="manga4">
+                    <div class="card-body">
+                        <h5 class="card-title">Junji Ito - Fragmentos do Horror</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imgs/manga_musashi.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal5" alt="manga5">
+                        <div class="card-body">
+                        <h5 class="card-title">A Lenda de Musashi</h5>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="imgs/manga_nakamura.webp" class="card-img-top" data-bs-toggle="modal" data-bs-target="#galleryModal6" alt="manga6">
+                        <div class="card-body">
+                        <h5 class="card-title">Força, Nakamura!!</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModal1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_jjk0.webp" class="modal-img" alt="manga1">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(276)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModal2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_calafrios.webp" class="modal-img" alt="manga2">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(187)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModal3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_deathnote.webp" class="modal-img" alt="manga3">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(82)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModal4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_junji_ito.webp" class="modal-img" alt="manga4">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(641)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal5" tabindex="-1" aria-labelledby="galleryModal5" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_musashi.webp" class="modal-img" alt="manga5">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(51)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="galleryModal6" tabindex="-1" aria-labelledby="galleryModal6" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="imgs/manga_nakamura.webp" class="modal-img" alt="manga6">
+                        </div>
+                        <div class="modal-footer">
+                            <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(201)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h4 id="mais-populares">Gêneros literários mais encontrados na biblioteca:</h4>
+            <h6>(Passe o mouse ou pressione para ver os números)</h6>
+
+            <br>
+
+            <div class="container text-center">
+                <table class="table table-dark">
+                    <tr>
+                        <th>Gênero</th>
+                        <th>Quantidade de exemplares</th>
+                    </tr>
+                    <tr>
+                        <td>Ação</td>
+                        <td class="hidden">14927</td>
+                    </tr>
+                    <tr>
+                        <td>Comédia</td>
+                        <td class="hidden">13316</td>
+                    </tr>
+                    <tr>
+                        <td>Romance</td>
+                        <td class="hidden">10692</td>
+                    </tr>
+                    <tr>
+                        <td>Drama</td>
+                        <td class="hidden">9060</td>
+                    </tr>
+                    <tr>
+                        <td>Suspense</td>
+                        <td class="hidden">5692</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br>
+
+            <div class="container text-center">
+                <h2 class="grow">AVISO!</h2>
+                <h5>Até 15 dias, o empréstimo do livro é gratuito. Após esse período, 2 reais serão cobrados por dia adicional de empréstimo.</h5>
+            </div>
+        </main>
+
+        <footer id="footer" class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <section class="d-flex justify-content-between p-4" style="background-color: rgba(0, 0, 0, 0.2)">
+                <div class="me-5">
+                    <span>Conheçam as nossas redes sociais:</span>
+                </div>
+                <div>
+                    <a href="#footer" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#footer" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#footer" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Biblioteca de Mangás</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        Aqui, somos mais do que apenas uma biblioteca; somos uma comunidade 
+                        apaixonada, dedicada a compartilhar a riqueza da cultura dos mangás 
+                        com todos vocês.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold">Contato</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p><i class="fas fa-home mr-3"></i> Avenida das Nações Unidas 12551/12559, Brooklin Paulista, São Paulo, SP</p>
+                    <p><i class="fas fa-envelope mr-3"></i> biblioteca@manga.com.br</p>
+                    <p><i class="fas fa-phone mr-3"></i> (54) 3138-5565</p>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            Biblioteca de Mangás © 2023 - Todos os direitos reservados
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
